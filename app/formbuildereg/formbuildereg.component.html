@@ -1,0 +1,25 @@
+<div class = "container-fluid">
+<h3>Login Form with Formbuilder</h3>
+
+
+<form [formGroup] = "MarvellousForm2">
+<div class="form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" formControlName="uname">
+</div>
+<br>
+<div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" formControlName="passowrd">
+</div>
+<br>
+<div class="form-group">
+    <label>Confirm Password</label>
+    <input type="confirmpw" class="form-control" formControlName="confirmpw">
+</div>
+<br>
+<button type="submit" class="btn btn-primary">Login</button>
+<button type="button" class="btn btn-primary ml-3" (click)="setData()">setvalues</button>
+</form>
+
+</div>

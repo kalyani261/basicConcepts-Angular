@@ -1,0 +1,22 @@
+<div  class="container-fluid">
+<form [formGroup] = "MarvellousForm3">
+    <div class="form-group">
+        <label>Username</label>
+        <input [class.is-invalid] = "MarvellousForm3.get('username').invalid" type="text" class="form-control" formControlName="username">
+    </div>
+
+    <div class="form-group">
+        <label>Password</label>
+        <input  [class.is-invalid] = "MarvellousForm3.get('Passowrd').invalid && MarvellousForm3.get('Passowrd').touched"  type="password" class="form-control" formControlName="Passowrd">
+
+    </div>
+
+    <div class="form-group">
+        <label>Confirm password</label>
+        <input type="password" class="form-control" formControlName="confirmpw">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="button" class="btn btn-primary ml-3" (click)="setData()">Set Values</button>
+</form>
+
+</div>

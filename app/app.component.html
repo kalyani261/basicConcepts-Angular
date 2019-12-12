@@ -1,0 +1,88 @@
+<!--<h3>ngif Example</h3>
+<app-ifels></app-ifels>
+
+<br>
+<br>
+
+<h3>ngfor example</h3>
+<app-ngforr></app-ngforr>
+<app-service-eg></app-service-eg>
+
+<app-service-eg2></app-service-eg2>
+
+<app-inbuiltpip></app-inbuiltpip>
+
+<app-batchlist></app-batchlist>
+<br>
+<app-batchdetails></app-batchdetails>
+
+<br>
+<br>-->
+
+
+
+
+<!--<h3>child to parent communication</h3>
+<app-childc (MyEvent)= "childdata= $event"></app-childc>
+<h3>Message receivd from child {{ childdata }}</h3>-->
+
+<app-valideg></app-valideg>
+
+<br><br>
+
+<app-formbuildereg></app-formbuildereg>
+
+
+<app-reactive-eg></app-reactive-eg>
+<br>
+<br>
+
+
+<h3>PArent to child communication</h3>
+<app-childcomponent [parentdata]="message"></app-childcomponent>
+<br>
+
+<!--<app-loginf></app-loginf>-->
+
+
+<h3>Routing Example</h3>
+<nav>
+        <a routerLink="/batches"> Batches </a>
+        <a routerLink="/subject"> Subject </a><br><br>
+
+        <a routerLink="/ifels">NgIF example</a><br>
+        <a routerLink="/ngforr">NGFOR Example</a><br><br>
+  
+  
+
+ <a routerLink="/ngswitc">NgSwitch exampple</a>
+<br><br>
+
+<a routerLink="/eventbind">Event Binding Example</a>
+<br><br>
+<a routerLink="/twoway">Two way binding</a>
+
+<br>
+<br>
+
+<a routerLink="/propertybind">Propert Bind example</a>
+
+<br><br>
+
+<a routerLink="/service-eg">1st component</a>
+<br>
+<a routerLink="/service-eg2">2nd component</a>
+<br>
+<br>
+
+<a routerLink="/inbuiltpip">Inbuilt Pipes Eg</a><br><br>
+
+
+<h3>{{'Hello kalyani' | custompipe:"Kalyani":"Ingale"}}
+</h3>
+
+</nav>
+
+
+
+<router-outlet></router-outlet>

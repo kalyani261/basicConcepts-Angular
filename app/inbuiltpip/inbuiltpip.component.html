@@ -1,0 +1,27 @@
+<h2>Pipes for string</h2>
+<h3>{{ str }}</h3>
+<h4>{{str | uppercase}}</h4>
+<h4>{{str | lowercase}}</h4>
+<h4>{{str | slice:10}}</h4>
+
+
+<h2>
+    Pipes for number</h2>
+    <h3>{{no}}</h3>
+    <h3>{{no | number : '1.2-3'}}</h3>
+    <h3>{{no | number : '3.2-5'}}</h3>
+
+    <h2>
+        pipes for date
+    </h2>
+    <h3>{{today}}</h3>
+    <h3>{{today | date:'short'}}</h3>
+    <h3>{{today | date:'shortTime'}}</h3>
+    <h3>{{today | date:'shortDate'}}</h3>
+
+    <h2>
+        Pipes for Currency
+      </h2>
+      <h2>{{0.78 | percent}}</h2>
+      <h2>{{78 | currency}}</h2>
+      <h2>{{78 | currency: 'INR'}}</h2>
